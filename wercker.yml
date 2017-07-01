@@ -48,7 +48,7 @@ deploy:
        cmd: /pipeline/source/hello
        port: "8080"
        tag: latest
-       repository: awalrepo/pipeline
+       repository: awal/pipeline
        registry: https://registry.hub.docker.com
 
    - cng/cf-deploy:
@@ -58,4 +58,4 @@ deploy:
        org: $ORG
        space: $SPACE
        appname: wercker-step-pipline
-       docker_image: awalrepo/pipeline
+       docker_image: awal/pipeline
