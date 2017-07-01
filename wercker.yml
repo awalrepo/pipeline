@@ -9,12 +9,6 @@ dev:
         name: env
         code: env
 
-    - script:
-        name: go get
-        code: |
-          cd $WERCKER_SOURCE_DIR
-          go version
-
     - internal/watch:
         code: go run main.go
         reload: true
@@ -27,12 +21,6 @@ build:
     - script:
         name: env
         code: env
-
-    - script:
-        name: go get
-        code: |
-          cd $WERCKER_SOURCE_DIR
-          go version
 
     # Build the project
     - script:
